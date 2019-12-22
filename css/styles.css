@@ -1,0 +1,200 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    background: #EDEDED;
+    color: #404040;
+    text-align: center;
+    line-height: 25px;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+header, footer {
+    max-width: 95%;
+    margin: 0 auto;
+}
+.navcontrols li {
+    list-style-type: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 6px;
+    padding: 10px;
+    background: #D9D9D9;
+}
+#studentdescription {
+    margin-top: 50px;
+}
+#studentdescription img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+#studentdescription p {
+    margin: 0 5% 0 5%;
+}
+#skills {
+    background-color: #ffffff;
+    padding-top: 30px;
+    margin: 20px 2% 20px 2%;
+}
+#skills img {
+    width: 95%;
+}
+#skills p {
+    margin: 10px;
+}
+#portfoliosection {
+    background: #D9D9D9;
+    padding-top: 40px;
+    margin: 30px 0 30px 0;
+}
+.portfoliotitle {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.portfolioimg {
+    padding-bottom: 30px;
+}
+.portfolioimg img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px transparent solid;
+    border-radius: 2%;
+}
+.portfolioimg figure {
+    margin: 40px 20px 50px 20px;
+}
+figcaption h3 {
+    font-weight: 600;
+}
+#contact {
+    margin: 50px 20px 50px 20px;
+}
+#contact h2, #contact p {
+    margin-bottom: 30px;
+}
+#contact h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+}
+.contactinfo a {
+    font-family: 'Indie Flower', cursive;
+    margin-left: 10px;
+    color: #404040;
+    font-weight: 700;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+footer {
+    border-top: 1px #A6A5A4 solid;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+footer a{
+    text-transform: uppercase;
+    color: #5A90BF;
+}
+footer ul {
+    display: none;
+}
+.navcontrols a:hover {
+    color: #5A90BF;
+    transition-duration: .2s;
+}
+#studentdescription img:hover {
+    border-radius: 30%;
+    transition-duration: .5s;
+}
+.portfolioimg img:hover {
+    border-bottom: 5px #2B401D solid;
+}
+.contactinfo a:hover {
+    color: #5A90BF;
+}
+/*MEDIA QUERIES===================*/
+/* iPads (portrait and landscape) ----------- */
+@media (min-device-width : 768px) {
+    .wrapper {
+        margin-top: 40px;
+    }
+    .navcontrols li {
+        display: inline-block;
+        background: #EDEDED;
+    }
+    #studentdescription {
+        display: flex;
+    }
+    #studentdescription p {
+        text-align: left;
+        order: -999999;
+    }
+    #portfoliosection, #skills {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .portfoliotitle {
+        margin-bottom: 50px;
+    }
+    .portfolioimg {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .portfolioimg figure {
+        max-width: 48%;
+        margin: 0 auto;
+    }
+    .contactmessage {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .BackToTop {
+        display: none;
+    }
+    footer ul {
+        display: unset;
+    }
+    footer a {
+        color: unset;
+    }
+    footer {
+        margin-bottom: 20px;
+    }
+}
+/* Laptops, Desktops and Larger.. ----------- */
+@media (min-width : 1024px) {
+    .wrapper {
+        margin-top: 40px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #studentdescription, .portfolioimg {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+    #studentdescription p {
+        margin: 20px 10px 0 3%;
+        padding-right: 10px;
+    }
+    #studentdescription img, #skills img  {
+        margin-top: 20px;
+        margin-right: 3.57%;
+        min-width: 300px;
+        max-width: 600px;
+    }
+    #portfoliosection{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #skills img {
+        margin: 0 auto;
+    }
+    .portfolioimg figure {
+        width: 29%;
+        margin-bottom: 50px;
+    }
+ }
